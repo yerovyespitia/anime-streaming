@@ -12,7 +12,9 @@ const App = () => {
 
   return (
     <>
-      {location.pathname === "/watch" ? null : <Navbar />}
+      {location.pathname.match(<Route path="/watch/:anime" />) ? null : (
+        <Navbar />
+      )}
       <Switch>
         <Route exact path="/">
           <Home />
@@ -20,7 +22,7 @@ const App = () => {
         <Route path="/view/:anime">
           <AnimeView />
         </Route>
-        <Route path="/watch">
+        <Route path="/watch/:anime">
           <Watch />
         </Route>
         <Route path="/spring">
@@ -28,9 +30,6 @@ const App = () => {
         </Route>
         <Route path="/fall">
           <ListContainer title={"Fall"} />
-        </Route>
-        <Route path="/popular">
-          <ListContainer title={"Popular"} />
         </Route>
       </Switch>
     </>

@@ -135,7 +135,7 @@ const Heading = () => {
         <PlayButton>
           <Link
             style={{ color: "white", textDecoration: "none" }}
-            to={"/watch"}
+            to={"/watch/Demon Slayer"}
           >
             <PlayIcon src={playicon} />
             Play

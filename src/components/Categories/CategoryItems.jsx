@@ -100,7 +100,7 @@ const CategoryItems = ({ item }) => {
     <CategoryImgContainer>
       <Image src={item.img} alt={item.title} />
       <InfoContainer>
-        <Link to={"/watch"}>
+        <Link to={`/watch/${item.title}`}>
           <PlayIcon src={play} />
         </Link>
         {added ? (
