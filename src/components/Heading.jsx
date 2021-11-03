@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
-import video from "../img/video.mp4";
+import video2 from "../img/video2.mp4";
 
 import playicon from "../img/play-icon.png";
 import addicon from "../img/add-icon.png";
@@ -154,7 +154,7 @@ const Heading = () => {
         )}
       </InfoContainer>
       <ReactPlayer
-        url={video}
+        url={video2}
         playing={true}
         muted={true}
         width="100%"
