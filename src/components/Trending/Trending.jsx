@@ -66,7 +66,6 @@ const TitleContainer = styled.div`
 const ButtonsContainer = styled.div``;
 
 const Trending = () => {
-
   const listRef = useRef();
 
   const moveToRight = () => {

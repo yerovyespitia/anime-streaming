@@ -2,11 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import search from "../img/header-imgs/search-icon.png";
-import bell from "../img/header-imgs/bell-icon.png";
-import photo from "../img/header-imgs/photo-icon.png";
-import expand from "../img/header-imgs/photo-expand-icon.png";
-
 const NavbarContainer = styled.div`
   width: 100%;
   color: white;
@@ -22,13 +17,8 @@ const Container = styled.div`
   margin-top: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 70px;
-`;
-
-const Left = styled.div`
-  display: flex;
-  align-items: center;
 `;
 
 const List = styled.span`
@@ -46,11 +36,6 @@ const List = styled.span`
     &:hover {
       background-color: white;
       color: black;
-    }
-  }
-  @media (max-width: 1240px) {
-    &:last-child {
-      display: none;
     }
   }
   @media (max-width: 1090px) {
@@ -75,50 +60,22 @@ const List = styled.span`
   }
 `;
 
-const Right = styled.div`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-`;
-
-const SearchIcon = styled.img`
-  margin-right: 20px;
-`;
-const BellIcon = styled.img`
-  margin-right: 20px;
-`;
-const PhotoIcon = styled.img`
-  margin-right: 20px;
-`;
-const PhotoExpandIcon = styled.img``;
-
 const Navbar = () => {
   return (
     <NavbarContainer>
       <Container>
-        <Left>
-          <List>
-            <Link to={"/"}>Home</Link>
-          </List>
-          <List>
-            <Link to={"/spring"}>Spring</Link>
-          </List>
-          <List>
-            <Link to={"/fall"}>Fall</Link>
-          </List>
-          <List>
-            <Link to={"/popular"}>Popular</Link>
-          </List>
-          <List>
-            <Link to={"/"}>List</Link>
-          </List>
-        </Left>
-        <Right>
-          <SearchIcon src={search} />
-          <BellIcon src={bell} />
-          <PhotoIcon src={photo} />
-          <PhotoExpandIcon src={expand} />
-        </Right>
+        <List>
+          <Link to={"/"}>Home</Link>
+        </List>
+        <List>
+          <Link to={"/spring"}>Spring</Link>
+        </List>
+        <List>
+          <Link to={"/fall"}>Fall</Link>
+        </List>
+        <List>
+          <Link to={"/"}>List</Link>
+        </List>
       </Container>
     </NavbarContainer>
   );

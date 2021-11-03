@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
-import video2 from "../img/video2.mp4";
+import video from "../img/video.mp4";
 
 import playicon from "../img/play-icon.png";
 import addicon from "../img/add-icon.png";
@@ -83,21 +83,21 @@ const InfoIcon = styled.img`
 `;
 
 const LogoContainer = styled.div`
+  width: 450px;
   position: absolute;
   left: 7%;
   bottom: 32%;
   cursor: pointer;
   z-index: 1;
-  @media (max-width: 1530px) {
-    left: 9%;
-  }
-  @media (max-width: 1320px) {
+  @media (max-width: 1250px) {
     display: none;
   }
 `;
 
 const DemonLogo = styled.img`
-  @media (max-width: 1530px) {
+  max-width: 100%;
+  height: auto;
+  @media (max-width: 1430px) {
     width: 400px;
   }
 `;
@@ -154,7 +154,7 @@ const Heading = () => {
         )}
       </InfoContainer>
       <ReactPlayer
-        url={video2}
+        url={video}
         playing={true}
         muted={true}
         width="100%"

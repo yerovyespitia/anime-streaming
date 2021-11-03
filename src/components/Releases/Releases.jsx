@@ -29,7 +29,6 @@ const LeftButton = styled.img`
 `;
 
 const TodayReleases = styled.div`
-  margin-left: 20px;
   &:hover ${RightButton} {
     display: flex;
   }
@@ -41,7 +40,6 @@ const TodayReleases = styled.div`
 const Release = styled.div`
   display: flex;
   overflow-y: hidden;
-  padding: 20px;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
     display: none;
@@ -53,7 +51,7 @@ const Title = styled.h1`
   font-weight: bold;
   font-size: 40px;
   color: white;
-  padding-left: 20px;
+  padding-left: 40px;
 `;
 
 const TitleContainer = styled.div`
@@ -66,7 +64,6 @@ const TitleContainer = styled.div`
 const ButtonsContainer = styled.div``;
 
 const Releases = () => {
-
   const desktop = window.innerWidth;
   const listRef = useRef();
 
