@@ -41,8 +41,8 @@ const TrendingNow = styled.div`
 const Trendy = styled.div`
   display: flex;
   overflow-y: hidden;
-  padding: 20px;
   scroll-behavior: smooth;
+  padding-bottom: 10px;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -53,7 +53,7 @@ const Title = styled.h1`
   font-weight: bold;
   font-size: 40px;
   color: white;
-  padding-left: 20px;
+  padding-left: 5px;
 `;
 
 const TitleContainer = styled.div`

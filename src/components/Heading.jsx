@@ -132,15 +132,15 @@ const Heading = () => {
         </Link>
       </LogoContainer>
       <InfoContainer>
-        <PlayButton>
-          <Link
-            style={{ color: "white", textDecoration: "none" }}
-            to={"/watch/Demon Slayer"}
-          >
+        <Link
+          to={"/watch/Demon Slayer"}
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          <PlayButton>
             <PlayIcon src={playicon} />
             Play
-          </Link>
-        </PlayButton>
+          </PlayButton>
+        </Link>
         <Link to={"/view/Demon Slayer"} style={{ textDecoration: "none" }}>
           <EpisodesButton>
             <InfoIcon src={infoicon} />

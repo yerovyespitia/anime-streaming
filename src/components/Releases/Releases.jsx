@@ -41,6 +41,7 @@ const Release = styled.div`
   display: flex;
   overflow-y: hidden;
   scroll-behavior: smooth;
+  padding-bottom: 10px;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -51,7 +52,7 @@ const Title = styled.h1`
   font-weight: bold;
   font-size: 40px;
   color: white;
-  padding-left: 40px;
+  padding-left: 25px;
 `;
 
 const TitleContainer = styled.div`

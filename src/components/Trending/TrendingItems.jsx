@@ -12,8 +12,9 @@ const InfoContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 487px;
-  height: 619px;
+  width: 20vw;
+  height: 99.2%;
+  min-width: 275px;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -23,14 +24,6 @@ const InfoContainer = styled.div`
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.39);
   z-index: 3;
-  @media (max-width: 545px) {
-    width: 360px;
-    height: 458px;
-  }
-  @media (max-width: 410px) {
-    width: 270px;
-    height: 343px;
-  }
 `;
 
 const TrendyImgContainer = styled.div`
@@ -39,28 +32,23 @@ const TrendyImgContainer = styled.div`
     opacity: 1;
   }
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
   }
 `;
 
 const Image = styled.img`
+  width: 20vw;
+  min-width: 275px;
   position: relative;
   z-index: 2;
   margin-right: 20px;
-  @media (max-width: 545px) {
-    width: 360px;
-    height: auto;
-  }
-  @media (max-width: 410px) {
-    width: 270px;
-  }
 `;
 
 const PlayIcon = styled.img`
   animation: fadeIn;
   animation-duration: 0.5s;
   margin-bottom: 25px;
-  margin-right: 20px;
+  margin-right: 10px;
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }
@@ -70,7 +58,7 @@ const WatchIcon = styled.img`
   animation: fadeIn;
   animation-duration: 0.5s;
   margin-bottom: 25px;
-  margin-right: 20px;
+  margin-right: 10px;
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }
@@ -82,7 +70,7 @@ const AddedIcon = styled.img`
   animation: fadeIn;
   animation-duration: 0.5s;
   margin-bottom: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }

@@ -13,7 +13,7 @@ const InfoContainer = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 99.6%;
+  height: 99.5%;
   border-radius: 15px;
   display: flex;
   flex-direction: row;

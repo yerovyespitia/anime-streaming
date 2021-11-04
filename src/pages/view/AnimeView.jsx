@@ -174,8 +174,6 @@ const AnimeView = () => {
         `https://anime-streaming-app-api.herokuapp.com/api/view/${path}`
       );
       setView(res.data);
-      console.log(res);
-      console.log(path);
     };
     fetchView();
   }, [path]);
