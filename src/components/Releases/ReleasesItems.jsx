@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "animate.css";
 
-import play from "../../img/info-play-icon.png";
-import add from "../../img/info-add-icon.png";
-import addedicon from "../../img/added-icon.png";
+import play from "../../img/header/info-play-icon.png";
+import add from "../../img/header/add-icon.png";
+import addedicon from "../../img/header/added-icon.png";
 import watch from "../../img/watch-icon.png";
 
 const InfoContainer = styled.div`

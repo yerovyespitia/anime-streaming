@@ -4,14 +4,14 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
-import video from "../img/video.mp4";
+import video from "../img/header/video.mp4";
 
-import playicon from "../img/play-icon.png";
-import addicon from "../img/add-icon.png";
-import infoicon from "../img/info-icon.png";
-import demonlogo from "../img/demon-logo.png";
-import addedicon from "../img/added-icon.png";
-import wallpaper from "../img/header-imgs/DemonSlayer.png";
+import playicon from "../img/header/play-icon.png";
+import addicon from "../img/header/add-icon.png";
+import infoicon from "../img/header/info-icon.png";
+import demonlogo from "../img/header/logo.png";
+import addedicon from "../img/header/added-icon.png";
+import wallpaper from "../img/header/wallpaper.png";
 
 const VideoContainer = styled.div`
   position: relative;
@@ -132,7 +132,7 @@ const Wallpaper = styled.img`
   }
 `;
 
-const Heading = () => {
+const Header = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -187,4 +187,4 @@ const Heading = () => {
   );
 };
 
-export default Heading;
+export default Header;

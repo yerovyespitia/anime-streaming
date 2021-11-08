@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import start from "../../img/header-imgs/start-icon.png";
-import add from "../../img/info-add-icon.png";
-import addedicon from "../../img/added-icon.png";
 import "animate.css";
 import axios from "axios";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router";
+import start from "../../img/header/start-icon.png";
+import add from "../../img/header/add-icon.png";
+import addedicon from "../../img/header/added-icon.png";
 
 import ep1 from "../../img/header-imgs/ep1.png";
 import ep2 from "../../img/header-imgs/ep2.png";
@@ -47,13 +47,11 @@ const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  @media only screen and (max-width: 800px) {
-    position: relative;
-    width: 100%;
-    margin: 20px 0;
-  }
   @media (max-width: 800px) {
     left: 0;
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
   }
 `;
 
@@ -70,7 +68,7 @@ const InfoTitle = styled.h1`
   color: white;
   margin: 10px 0 0 0;
   @media (max-width: 800px) {
-    display: none;
+    margin: 10px 20px;
   }
 `;
 
@@ -83,7 +81,7 @@ const InfoDesc = styled.p`
     display: block;
   }
   @media (max-width: 800px) {
-    margin: 0 20px;
+    margin: 10px 20px;
   }
 `;
 
