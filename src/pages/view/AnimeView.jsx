@@ -26,10 +26,7 @@ const HeaderContainer = styled.div`
   position: relative;
 `;
 const SeasonsContainer = styled.div`
-  margin: 40px;
-  @media only screen and (max-device-width: 800px) {
-    margin: 20px;
-  }
+  margin: 20px;
 `;
 
 const WallpaperImg = styled.img`
@@ -86,7 +83,7 @@ const InfoDesc = styled.p`
     display: block;
   }
   @media (max-width: 800px) {
-    margin: 0 40px;
+    margin: 0 20px;
   }
 `;
 
