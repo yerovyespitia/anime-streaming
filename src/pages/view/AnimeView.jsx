@@ -63,7 +63,7 @@ const InfoLogo = styled.img`
 `;
 
 const InfoTitle = styled.h1`
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
   color: white;
   margin: 10px 0 0 0;
@@ -73,8 +73,9 @@ const InfoTitle = styled.h1`
 `;
 
 const InfoDesc = styled.p`
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-weight: 500;
   color: white;
   margin: 10px 0 10px 0;
   @media only screen and (max-width: 800px) {
@@ -139,7 +140,7 @@ const EpisodeImg = styled.img`
 `;
 
 const EpisodeTitle = styled.p`
-  font-family: Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -150,7 +151,7 @@ const EpisodeTitle = styled.p`
 `;
 
 const EpisodeTime = styled.p`
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 22px;
   color: #bbbbbb;
   margin-top: 10px;
@@ -158,11 +159,11 @@ const EpisodeTime = styled.p`
 `;
 
 const SeasonsTitle = styled.h2`
-  font-family: Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 23px;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   cursor: pointer;
 `;
 
