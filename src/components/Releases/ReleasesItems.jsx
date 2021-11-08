@@ -13,7 +13,7 @@ const InfoContainer = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 99.3%;
+  height: 99.4%;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -23,6 +23,10 @@ const InfoContainer = styled.div`
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.39);
   z-index: 3;
+  @media only screen and (max-device-width: 730px) {
+    background-color: transparent;
+    opacity: 1;
+  }
 `;
 
 const ReleaseImgContainer = styled.div`
@@ -33,6 +37,11 @@ const ReleaseImgContainer = styled.div`
   &:hover {
     transform: scale(1.005);
   }
+  @media only screen and (max-device-width: 730px) {
+    &:hover {
+      transform: scale(1);
+    }
+  }
 `;
 
 const Image = styled.img`
@@ -40,6 +49,9 @@ const Image = styled.img`
   position: relative;
   z-index: 2;
   margin-right: 20px;
+  @media only screen and (max-device-width: 730px) {
+    filter: grayscale(30%) opacity(85%);
+  }
 `;
 
 const PlayIcon = styled.img`

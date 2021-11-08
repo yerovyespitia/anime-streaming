@@ -124,8 +124,11 @@ const Wallpaper = styled.img`
   width: 100%;
   height: 100%;
   display: none;
-  @media only screen and (max-device-width: 540px) {
+  @media only screen and (max-device-width: 730px) {
     display: inline-block;
+    border-radius: 20px;
+    height: 60vh;
+    object-fit: cover;
   }
 `;
 

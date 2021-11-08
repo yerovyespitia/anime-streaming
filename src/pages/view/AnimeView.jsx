@@ -27,78 +27,87 @@ const HeaderContainer = styled.div`
 `;
 const SeasonsContainer = styled.div`
   margin: 40px;
+  @media only screen and (max-device-width: 800px) {
+    margin: 20px;
+  }
 `;
 
 const WallpaperImg = styled.img`
   width: 100%;
-  @media (max-width: 730px) {
-    border-radius: 40px;
-    height: 50vh;
+  @media (max-width: 800px) {
+    border-radius: 20px;
+    height: 60vh;
     object-fit: cover;
   }
 `;
 
 const InfoContainer = styled.div`
   position: absolute;
-  width: 35%;
   top: 0;
-  margin-top: 15%;
-  margin-left: 40px;
-  @media (max-width: 920px) {
-    margin-top: 35%;
-    width: 50%;
+  bottom: 12%;
+  left: 4%;
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @media only screen and (max-width: 800px) {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
   }
-  @media (max-width: 600px) {
-    margin-top: 170px;
-    width: 306px;
-  }
-  @media (max-width: 730px) {
-    display: none;
+  @media (max-width: 800px) {
+    left: 0;
   }
 `;
 
 const InfoLogo = styled.img`
-  max-width: 70%;
-  @media (max-width: 920px) {
+  width: 55%;
+  @media (max-width: 800px) {
     display: none;
   }
 `;
 
 const InfoTitle = styled.h1`
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
-  @media (max-width: 1640px) {
+  margin: 10px 0 0 0;
+  @media (max-width: 800px) {
     display: none;
   }
 `;
 
 const InfoDesc = styled.p`
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 23px;
-  text-align: justify;
+  font-size: 18px;
   color: white;
-  @media (max-width: 1600px) {
-    font-size: 20px;
+  margin: 10px 0 10px 0;
+  @media only screen and (max-width: 800px) {
+    display: block;
   }
-  @media (max-width: 1310px) {
+  @media (max-width: 800px) {
+    margin: 0 40px;
+  }
+`;
+
+const ButtonsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  @media (max-width: 800px) {
     display: none;
   }
 `;
 
 const StartIcon = styled.img`
-  width: 207px;
-  height: 61px;
+  width: clamp(180px, 30%, 207px);
   cursor: pointer;
   &:hover {
     filter: grayscale(30%) opacity(95%);
   }
-  @media (max-width: 1310px) {
-    margin-top: 40px;
-  }
 `;
 
 const AddIcon = styled.img`
+  align-self: center;
   margin-left: 20px;
   cursor: pointer;
   &:hover {
@@ -133,9 +142,10 @@ const EpisodeImg = styled.img`
     filter: grayscale(40%) opacity(80%);
   }
 `;
+
 const EpisodeTitle = styled.p`
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 22px;
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
   color: white;
@@ -153,9 +163,11 @@ const EpisodeTime = styled.p`
 `;
 
 const SeasonsTitle = styled.h2`
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
   color: white;
   font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 3px;
   cursor: pointer;
 `;
 
@@ -192,18 +204,18 @@ const AnimeView = () => {
             <InfoLogo src={view.logo} />
             <InfoTitle>{view.name}</InfoTitle>
             <InfoDesc>{view.description}</InfoDesc>
-            <StartIcon src={start} />
-            {added ? (
-              <AddIcon onClick={handleClick} src={add} />
-            ) : (
-              <AddedIcon onClick={handleClick} src={addedicon} />
-            )}
+            <ButtonsContainer>
+              <StartIcon src={start} />
+              {added ? (
+                <AddIcon onClick={handleClick} src={add} />
+              ) : (
+                <AddedIcon onClick={handleClick} src={addedicon} />
+              )}
+            </ButtonsContainer>
           </InfoContainer>
         </HeaderContainer>
         <SeasonsContainer>
-          <SeasonsTitle>
-              Season 1
-          </SeasonsTitle>
+          <SeasonsTitle>Season 1</SeasonsTitle>
           <Episodes>
             <Episode>
               <EpisodeImg src={ep1} />
