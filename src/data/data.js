@@ -258,7 +258,7 @@ export const GoreAnime = [
     id: 32,
   },
   {
-    title: "Tokyo Ghoul: Jack",
+    title: "Kakegurui",
     img: gore3,
     id: 33,
   },
