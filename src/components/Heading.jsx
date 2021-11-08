@@ -11,6 +11,7 @@ import addicon from "../img/add-icon.png";
 import infoicon from "../img/info-icon.png";
 import demonlogo from "../img/demon-logo.png";
 import addedicon from "../img/added-icon.png";
+import wallpaper from "../img/header-imgs/DemonSlayer.png";
 
 const VideoContainer = styled.div`
   position: relative;
@@ -113,6 +114,21 @@ const AddedIcon = styled.img`
   }
 `;
 
+const ReactPlayerContainer = styled.div`
+  @media only screen and (max-device-width: 540px) {
+    display: none;
+  }
+`;
+
+const Wallpaper = styled.img`
+  width: 100%;
+  height: 100%;
+  display: none;
+  @media only screen and (max-device-width: 540px) {
+    display: inline-block;
+  }
+`;
+
 const Heading = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -153,14 +169,17 @@ const Heading = () => {
           <AddedIcon onClick={handleClick} src={addedicon} />
         )}
       </InfoContainer>
-      <ReactPlayer
-        url={video}
-        playing={true}
-        muted={true}
-        width="100%"
-        height="100%"
-        loop={true}
-      />
+      <ReactPlayerContainer>
+        <ReactPlayer
+          url={video}
+          playing={true}
+          muted={true}
+          width="100%"
+          height="100%"
+          loop={true}
+        />
+      </ReactPlayerContainer>
+      <Wallpaper src={wallpaper} />
     </VideoContainer>
   );
 };

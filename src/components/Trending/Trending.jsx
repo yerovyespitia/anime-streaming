@@ -63,7 +63,11 @@ const TitleContainer = styled.div`
   align-items: center;
 `;
 
-const ButtonsContainer = styled.div``;
+const ButtonsContainer = styled.div`
+  @media only screen and (max-device-width: 540px) {
+    display: none;
+  }
+`;
 
 const Trending = () => {
   const listRef = useRef();

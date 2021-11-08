@@ -52,8 +52,6 @@ const List = styled.span`
     &:nth-child(2) {
       display: none;
     }
-  }
-  @media (max-width: 470px) {
     &:first-child {
       display: none;
     }

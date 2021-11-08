@@ -15,7 +15,7 @@ const InfoContainer = styled.div`
   width: 23vw;
   min-width: 325px;
   height: 99%;
-  border-radius: 15px;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;

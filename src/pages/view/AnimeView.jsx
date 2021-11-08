@@ -3,7 +3,6 @@ import styled from "styled-components";
 import start from "../../img/header-imgs/start-icon.png";
 import add from "../../img/info-add-icon.png";
 import addedicon from "../../img/added-icon.png";
-import expandicon from "../../img/header-imgs/expand-icon.png";
 import "animate.css";
 import axios from "axios";
 import { Helmet } from "react-helmet";
@@ -32,6 +31,11 @@ const SeasonsContainer = styled.div`
 
 const WallpaperImg = styled.img`
   width: 100%;
+  @media (max-width: 730px) {
+    border-radius: 40px;
+    height: 50vh;
+    object-fit: cover;
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -48,7 +52,7 @@ const InfoContainer = styled.div`
     margin-top: 170px;
     width: 306px;
   }
-  @media (max-width: 530px) {
+  @media (max-width: 730px) {
     display: none;
   }
 `;
@@ -117,8 +121,8 @@ const AddedIcon = styled.img`
 const Episodes = styled.div`
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
-  gap: 60px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  gap: 40px 20px;
 `;
 
 const Episode = styled.div``;
@@ -136,7 +140,7 @@ const EpisodeTitle = styled.p`
   letter-spacing: 1px;
   color: white;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0;
 `;
 
@@ -152,12 +156,6 @@ const SeasonsTitle = styled.h2`
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-size: 23px;
-  cursor: pointer;
-`;
-
-const ExpandIcon = styled.img`
-  width: 20px;
-  margin-left: 5px;
   cursor: pointer;
 `;
 
@@ -204,8 +202,7 @@ const AnimeView = () => {
         </HeaderContainer>
         <SeasonsContainer>
           <SeasonsTitle>
-            Seasons
-            <ExpandIcon src={expandicon} />
+              Season 1
           </SeasonsTitle>
           <Episodes>
             <Episode>
