@@ -8,18 +8,18 @@ import start from "../../img/header/start-icon.png";
 import add from "../../img/header/add-icon.png";
 import addedicon from "../../img/header/added-icon.png";
 
-import ep1 from "../../img/header-imgs/ep1.png";
-import ep2 from "../../img/header-imgs/ep2.png";
-import ep3 from "../../img/header-imgs/ep3.png";
-import ep4 from "../../img/header-imgs/ep4.png";
-import ep5 from "../../img/header-imgs/ep5.png";
-import ep6 from "../../img/header-imgs/ep6.png";
-import ep7 from "../../img/header-imgs/ep7.png";
-import ep8 from "../../img/header-imgs/ep8.png";
-import ep9 from "../../img/header-imgs/ep9.png";
-import ep10 from "../../img/header-imgs/ep10.png";
-import ep11 from "../../img/header-imgs/ep11.png";
-import ep12 from "../../img/header-imgs/ep12.png";
+import ep1 from "../../img/header/ep1.png";
+import ep2 from "../../img/header/ep2.png";
+import ep3 from "../../img/header/ep3.png";
+import ep4 from "../../img/header/ep4.png";
+import ep5 from "../../img/header/ep5.png";
+import ep6 from "../../img/header/ep6.png";
+import ep7 from "../../img/header/ep7.png";
+import ep8 from "../../img/header/ep8.png";
+import ep9 from "../../img/header/ep9.png";
+import ep10 from "../../img/header/ep10.png";
+import ep11 from "../../img/header/ep11.png";
+import ep12 from "../../img/header/ep12.png";
 
 const Container = styled.div``;
 const HeaderContainer = styled.div`
