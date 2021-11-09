@@ -7,26 +7,11 @@ import { useLocation } from "react-router";
 import start from "../../img/header/start-icon.png";
 import add from "../../img/header/add-icon.png";
 import addedicon from "../../img/header/added-icon.png";
-
-import ep1 from "../../img/header/ep1.png";
-import ep2 from "../../img/header/ep2.png";
-import ep3 from "../../img/header/ep3.png";
-import ep4 from "../../img/header/ep4.png";
-import ep5 from "../../img/header/ep5.png";
-import ep6 from "../../img/header/ep6.png";
-import ep7 from "../../img/header/ep7.png";
-import ep8 from "../../img/header/ep8.png";
-import ep9 from "../../img/header/ep9.png";
-import ep10 from "../../img/header/ep10.png";
-import ep11 from "../../img/header/ep11.png";
-import ep12 from "../../img/header/ep12.png";
+import SeasonContainer from "../../components/Season/SeasonContainer";
 
 const Container = styled.div``;
 const HeaderContainer = styled.div`
   position: relative;
-`;
-const SeasonsContainer = styled.div`
-  margin: 20px;
 `;
 
 const WallpaperImg = styled.img`
@@ -103,6 +88,8 @@ const StartIcon = styled.img`
 `;
 
 const AddIcon = styled.img`
+  width: 64px;
+  height: 62px;
   align-self: center;
   margin-left: 20px;
   cursor: pointer;
@@ -121,50 +108,6 @@ const AddedIcon = styled.img`
   &:hover {
     filter: grayscale(30%) opacity(90%);
   }
-`;
-
-const Episodes = styled.div`
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
-  gap: 40px 20px;
-`;
-
-const Episode = styled.div``;
-const EpisodeImg = styled.img`
-  width: 100%;
-  cursor: pointer;
-  &:hover {
-    filter: grayscale(40%) opacity(80%);
-  }
-`;
-
-const EpisodeTitle = styled.p`
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: white;
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 0;
-`;
-
-const EpisodeTime = styled.p`
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  color: #bbbbbb;
-  margin-top: 10px;
-  margin-bottom: 0;
-`;
-
-const SeasonsTitle = styled.h2`
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  font-size: 23px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  cursor: pointer;
 `;
 
 const AnimeView = () => {
@@ -210,73 +153,7 @@ const AnimeView = () => {
             </ButtonsContainer>
           </InfoContainer>
         </HeaderContainer>
-        <SeasonsContainer>
-          <SeasonsTitle>Season 1</SeasonsTitle>
-          <Episodes>
-            <Episode>
-              <EpisodeImg src={ep1} />
-              <EpisodeTitle>1. Cruelty</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep2} />
-              <EpisodeTitle>2. Trainer Sakonji Urokodaki</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep3} />
-              <EpisodeTitle>3. Sabito and Makomo</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep4} />
-              <EpisodeTitle>4. Final Selection</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep5} />
-              <EpisodeTitle>5. My Own Steel</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep6} />
-              <EpisodeTitle>6. Swordsman Accompanying a Demon</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep7} />
-              <EpisodeTitle>7. Muzan Kibutsuji</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep8} />
-              <EpisodeTitle>8. The Smell of Enchanting Blood</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep9} />
-              <EpisodeTitle>9. Temari Demon and Arrow Demon</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep10} />
-              <EpisodeTitle>10. Together Forever</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep11} />
-              <EpisodeTitle>11. Tsuzumi Mansion</EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-            <Episode>
-              <EpisodeImg src={ep12} />
-              <EpisodeTitle>
-                12. The Boar Bares its Fangs, Zenitsu Sleeps
-              </EpisodeTitle>
-              <EpisodeTime>24min</EpisodeTime>
-            </Episode>
-          </Episodes>
-        </SeasonsContainer>
+        <SeasonContainer />
       </Container>
     </>
   );
