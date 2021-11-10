@@ -17,7 +17,7 @@ const HeaderContainer = styled.div`
 const WallpaperImg = styled.img`
   width: 100%;
   @media (max-width: 800px) {
-    border-radius: 20px;
+    border-radius: 0 0 30px 30px;
     height: 60vh;
     object-fit: cover;
   }

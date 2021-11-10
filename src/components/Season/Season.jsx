@@ -8,6 +8,11 @@ const EpisodeImg = styled.img`
   &:hover {
     filter: grayscale(40%) opacity(80%);
   }
+  @media only screen and (max-width: 800px) {
+    &:hover {
+      filter: 0;
+    }
+  }
 `;
 
 const EpisodeTitle = styled.p`
