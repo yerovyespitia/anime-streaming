@@ -38,7 +38,7 @@ const PlayButton = styled.span`
   font-size: 25px;
   font-family: "SF Pro", Arial, Helvetica, sans-serif;
   border-radius: 60px;
-  padding: 20px 70px;
+  padding: 17px 60px;
   margin-right: 20px;
   cursor: pointer;
   &:hover {
@@ -59,7 +59,7 @@ const EpisodesButton = styled.span`
   font-size: 25px;
   font-family: "SF Pro", Arial, Helvetica, sans-serif;
   border-radius: 60px;
-  padding: 20px 70px;
+  padding: 17px 60px;
   margin-right: 20px;
   &:hover {
     background-color: #e7e7e7;
@@ -69,7 +69,7 @@ const EpisodesButton = styled.span`
 const AddIcon = styled.img`
   cursor: pointer;
   transform: translateY(40%);
-  width: 64px;
+  width: 60px;
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }

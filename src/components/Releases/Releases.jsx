@@ -27,7 +27,7 @@ const Title = styled.h1`
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-left: 15px;
   margin-bottom: 10px;

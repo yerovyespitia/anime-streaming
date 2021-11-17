@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import "animate.css";
 import axios from "axios";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 import start from "../../img/header/start-icon.png";
 import add from "../../img/header/add-icon.png";
 import addedicon from "../../img/header/added-icon.png";
@@ -18,7 +18,7 @@ const WallpaperImg = styled.img`
   width: 100%;
   @media (max-width: 800px) {
     border-radius: 0 0 16px 16px;
-    height: 60vh;
+    height: 65vh;
     object-fit: cover;
   }
 `;
@@ -88,8 +88,7 @@ const StartIcon = styled.img`
 `;
 
 const AddIcon = styled.img`
-  width: 64px;
-  height: 62px;
+  width: 55px;
   align-self: center;
   margin-left: 20px;
   cursor: pointer;
@@ -99,9 +98,7 @@ const AddIcon = styled.img`
 `;
 
 const AddedIcon = styled.img`
-  width: 64px;
-  height: 62px;
-  animation: fadeIn;
+  width: 55px;
   animation-duration: 0.5s;
   margin-left: 20px;
   cursor: pointer;
@@ -144,7 +141,9 @@ const AnimeView = () => {
             <InfoTitle>{view.name}</InfoTitle>
             <InfoDesc>{view.description}</InfoDesc>
             <ButtonsContainer>
-              <StartIcon src={start} />
+              <Link to={`/watch/${view.name}`} style={{width: "180px"}}>
+                <StartIcon src={start} />
+              </Link>
               {added ? (
                 <AddIcon onClick={handleClick} src={add} />
               ) : (
