@@ -15,9 +15,9 @@ const Home = () => {
       <Header />
       <Releases />
       <Trending />
-      <Category title={"Continue Watching"} data={WatchingAnime} />
-      <Category title={"Spring Releases"} data={SpringAnime} />
-      <Category title={"Fall Releases"} data={FallAnime} />
+      <Category title={"Continue watching"} data={WatchingAnime} />
+      <Category title={"Spring releases"} data={SpringAnime} />
+      <Category title={"Fall releases"} data={FallAnime} />
     </>
   );
 };

@@ -134,7 +134,7 @@ const AnimeView = () => {
   return (
     <>
       <Helmet>
-        <title>{path} Episodes </title>
+        <title>{path}</title>
       </Helmet>
       <Container>
         <HeaderContainer>

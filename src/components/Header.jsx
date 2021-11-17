@@ -10,7 +10,7 @@ import addicon from "../img/header/add-icon.png";
 import infoicon from "../img/header/info-icon.png";
 import demonlogo from "../img/header/logo.png";
 import addedicon from "../img/header/added-icon.png";
-import wallpaper from "../img/header/wallpaper2.png";
+import wallpaper from "../img/header/wallpaper.png";
 
 const Container = styled.div`
   position: relative;
