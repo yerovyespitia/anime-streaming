@@ -1,116 +1,50 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import ReleasesItems from "./ReleasesItems";
 import { AnimeReleases } from "../../data/data";
-import right from "../../img/right-icon.png";
-import left from "../../img/left-icon.png";
 
-const RightButton = styled.img`
-  width: 40px;
-  height: 30px;
-  margin-right: 40px;
-  margin-left: 20px;
-  cursor: pointer;
-  display: none;
-  &:hover {
-    filter: grayscale(70%) opacity(70%);
-  }
+const Container = styled.div`
+  margin: 50px 0;
 `;
 
-const LeftButton = styled.img`
-  width: 40px;
-  height: 30px;
-  margin-left: 20px;
-  cursor: pointer;
-  display: none;
-  &:hover {
-    filter: grayscale(70%) opacity(70%);
-  }
-`;
-
-const TodayReleases = styled.div`
-  &:hover ${RightButton} {
-    display: flex;
-  }
-  &:hover ${LeftButton} {
-    display: flex;
-  }
-`;
-
-const Release = styled.div`
+const ImagesContainer = styled.div`
   display: flex;
+  justify-content: center;
   overflow-y: hidden;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
 const Title = styled.h1`
-  font-family: "SF Pro", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
   color: white;
-  padding-left: 25px;
 `;
 
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-`;
-
-const ButtonsContainer = styled.div`
-  @media only screen and (max-device-width: 540px) {
-    display: none;
-  }
+  margin-left: 15px;
+  margin-bottom: 10px;
 `;
 
 const Releases = () => {
-  const desktop = window.innerWidth;
-  const listRef = useRef();
-
-  const moveToRight = () => {
-    if (desktop > 1960) {
-      listRef.current.scrollLeft += 1780;
-    } else if (desktop > 1260) {
-      listRef.current.scrollLeft += 980;
-    } else if (desktop > 1040) {
-      listRef.current.scrollLeft += 1080;
-    } else if (desktop > 0) {
-      listRef.current.scrollLeft += 640;
-    }
-  };
-
-  const moveToLeft = () => {
-    if (desktop > 1960) {
-      listRef.current.scrollLeft -= 1780;
-    } else if (desktop > 1260) {
-      listRef.current.scrollLeft -= 980;
-    } else if (desktop > 1040) {
-      listRef.current.scrollLeft -= 1080;
-    } else if (desktop > 0) {
-      listRef.current.scrollLeft -= 640;
-    }
-  };
-
   return (
-    <TodayReleases>
+    <Container>
       <TitleContainer>
-        <Title>Today Releases</Title>
-        <ButtonsContainer>
-          <RightButton onClick={moveToRight} src={right} />
-          <LeftButton onClick={moveToLeft} src={left} />
-        </ButtonsContainer>
+        <Title>Today releases</Title>
       </TitleContainer>
-      <Release ref={listRef}>
+      <ImagesContainer>
         {AnimeReleases.map((item, i) => (
           <ReleasesItems item={item} key={i} />
         ))}
-      </Release>
-    </TodayReleases>
+      </ImagesContainer>
+    </Container>
   );
 };
 

@@ -28,7 +28,7 @@ const LeftButton = styled.img`
 `;
 
 const Container = styled.div`
-  margin-left: 20px;
+  margin: 50px 15px;
   &:hover ${RightButton} {
     display: flex;
   }
@@ -37,22 +37,20 @@ const Container = styled.div`
   }
 `;
 
-const ContainerImg = styled.div`
+const ImagesContainer = styled.div`
   display: flex;
   overflow-y: hidden;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
 const Title = styled.h1`
-  font-family: "SF Pro", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
   color: white;
-  padding-left: 5px;
 `;
 
 const TitleContainer = styled.div`
@@ -60,6 +58,7 @@ const TitleContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 const ButtonsContainer = styled.div`
@@ -88,11 +87,11 @@ const Category = (props) => {
           <LeftButton onClick={moveToLeft} src={left} />
         </ButtonsContainer>
       </TitleContainer>
-      <ContainerImg ref={listRef}>
+      <ImagesContainer ref={listRef}>
         {props.data.map((item, i) => (
           <CategoryItems item={item} key={i} />
         ))}
-      </ContainerImg>
+      </ImagesContainer>
     </Container>
   );
 };

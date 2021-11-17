@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "animate.css";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
@@ -11,9 +10,9 @@ import addicon from "../img/header/add-icon.png";
 import infoicon from "../img/header/info-icon.png";
 import demonlogo from "../img/header/logo.png";
 import addedicon from "../img/header/added-icon.png";
-import wallpaper from "../img/header/wallpaper.png";
+import wallpaper from "../img/header/wallpaper2.png";
 
-const VideoContainer = styled.div`
+const Container = styled.div`
   position: relative;
 `;
 
@@ -71,8 +70,6 @@ const AddIcon = styled.img`
   cursor: pointer;
   transform: translateY(40%);
   width: 64px;
-  animation: fadeIn;
-  animation-duration: 0.5s;
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }
@@ -84,13 +81,13 @@ const InfoIcon = styled.img`
 `;
 
 const LogoContainer = styled.div`
-  width: 450px;
+  width: 420px;
   position: absolute;
   left: 7%;
   bottom: 32%;
   cursor: pointer;
   z-index: 1;
-  @media (max-width: 1250px) {
+  @media (max-width: 1050px) {
     display: none;
   }
 `;
@@ -98,9 +95,6 @@ const LogoContainer = styled.div`
 const DemonLogo = styled.img`
   max-width: 100%;
   height: auto;
-  @media (max-width: 1430px) {
-    width: 400px;
-  }
 `;
 
 const AddedIcon = styled.img`
@@ -114,8 +108,8 @@ const AddedIcon = styled.img`
   }
 `;
 
-const ReactPlayerContainer = styled.div`
-  @media only screen and (max-device-width: 540px) {
+const VideoContainer = styled.div`
+  @media only screen and (max-device-width: 730px) {
     display: none;
   }
 `;
@@ -126,8 +120,8 @@ const Wallpaper = styled.img`
   display: none;
   @media only screen and (max-device-width: 730px) {
     display: inline-block;
-    border-radius: 20px;
-    height: 60vh;
+    border-radius: 0 0 16px 16px;
+    height: 65vh;
     object-fit: cover;
   }
 `;
@@ -144,7 +138,7 @@ const Header = () => {
   };
 
   return (
-    <VideoContainer>
+    <Container>
       <LogoContainer>
         <Link to={"/view/Demon Slayer"}>
           <DemonLogo src={demonlogo} />
@@ -172,7 +166,7 @@ const Header = () => {
           <AddedIcon onClick={handleClick} src={addedicon} />
         )}
       </InfoContainer>
-      <ReactPlayerContainer>
+      <VideoContainer>
         <ReactPlayer
           url={video}
           playing={true}
@@ -181,9 +175,9 @@ const Header = () => {
           height="100%"
           loop={true}
         />
-      </ReactPlayerContainer>
+      </VideoContainer>
       <Wallpaper src={wallpaper} />
-    </VideoContainer>
+    </Container>
   );
 };
 

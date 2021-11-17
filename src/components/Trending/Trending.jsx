@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import TrendingItems from "./TrendingItems";
-import { AnimeTrendy } from "../../data/data";
+import { AnimeTrending } from "../../data/data";
 import right from "../../img/right-icon.png";
 import left from "../../img/left-icon.png";
 
@@ -28,8 +28,8 @@ const LeftButton = styled.img`
   }
 `;
 
-const TrendingNow = styled.div`
-  margin-left: 20px;
+const Container = styled.div`
+  margin: 50px 15px;
   &:hover ${RightButton} {
     display: flex;
   }
@@ -38,22 +38,20 @@ const TrendingNow = styled.div`
   }
 `;
 
-const Trendy = styled.div`
+const ImagesContainer = styled.div`
   display: flex;
   overflow-y: hidden;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
 const Title = styled.h1`
-  font-family: "SF Pro", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
   color: white;
-  padding-left: 5px;
 `;
 
 const TitleContainer = styled.div`
@@ -61,6 +59,7 @@ const TitleContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 const ButtonsContainer = styled.div`
@@ -81,20 +80,20 @@ const Trending = () => {
   };
 
   return (
-    <TrendingNow>
+    <Container>
       <TitleContainer>
-        <Title>Trending Now</Title>
+        <Title>Trending now</Title>
         <ButtonsContainer>
           <RightButton onClick={moveToRight} src={right} />
           <LeftButton onClick={moveToLeft} src={left} />
         </ButtonsContainer>
       </TitleContainer>
-      <Trendy ref={listRef}>
-        {AnimeTrendy.map((item, i) => (
+      <ImagesContainer ref={listRef}>
+        {AnimeTrending.map((item, i) => (
           <TrendingItems item={item} key={i} />
         ))}
-      </Trendy>
-    </TrendingNow>
+      </ImagesContainer>
+    </Container>
   );
 };
 
