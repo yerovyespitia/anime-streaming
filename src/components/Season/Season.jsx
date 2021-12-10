@@ -36,7 +36,6 @@ const EpisodeTime = styled.p`
 
 const Season = (seasons) => {
   const [ep] = useState(seasons.season);
-  console.log(ep);
   return (
     <>
       <Episode>
