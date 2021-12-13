@@ -115,13 +115,11 @@ const AnimeView = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const fetchView = async () => {
-      const res = await axios.get(
-        `https://anime-streaming-app-api.herokuapp.com/api/view/${path}`
-      );
-      setView(res.data);
-    };
-    fetchView();
+    axios
+      .get(`https://anime-streaming-app-api.herokuapp.com/api/view/${path}`)
+      .then((res) => {
+        setView(res.data);
+      });
   }, [path]);
 
   const handleClick = () => {
@@ -141,7 +139,7 @@ const AnimeView = () => {
             <InfoTitle>{view.name}</InfoTitle>
             <InfoDesc>{view.description}</InfoDesc>
             <ButtonsContainer>
-              <Link to={`/watch/${view.name}`} style={{width: "180px"}}>
+              <Link to={`/watch/${view.name}`} style={{ width: "180px" }}>
                 <StartIcon src={start} />
               </Link>
               {added ? (
