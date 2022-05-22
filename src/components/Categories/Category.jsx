@@ -28,7 +28,7 @@ const LeftButton = styled.img`
 `;
 
 const Container = styled.div`
-  margin: 50px 15px;
+  margin: 50px 0 50px 50px;
   &:hover ${RightButton} {
     display: flex;
   }
@@ -49,7 +49,7 @@ const ImagesContainer = styled.div`
 const Title = styled.h1`
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   color: white;
 `;
 

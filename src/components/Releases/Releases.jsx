@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import ReleasesItems from "./ReleasesItems";
-import { AnimeReleases } from "../../data/data";
+import React from "react"
+import styled from "styled-components"
+import ReleasesItems from "./ReleasesItems"
+import { AnimeReleases } from "../../data/data"
 
 const Container = styled.div`
   margin: 50px 0;
-`;
+`
 
 const ImagesContainer = styled.div`
   display: flex;
@@ -15,14 +15,14 @@ const ImagesContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-`;
+`
 
 const Title = styled.h1`
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   color: white;
-`;
+`
 
 const TitleContainer = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ const TitleContainer = styled.div`
   align-items: center;
   margin-left: 15px;
   margin-bottom: 10px;
-`;
+`
 
 const Releases = () => {
   return (
@@ -45,7 +45,7 @@ const Releases = () => {
         ))}
       </ImagesContainer>
     </Container>
-  );
-};
+  )
+}
 
-export default Releases;
+export default Releases

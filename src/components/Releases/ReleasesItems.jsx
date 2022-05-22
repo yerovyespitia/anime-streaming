@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Image = styled.img`
-  width: 99vw;
+  width: 100vw;
   min-height: 538px;
   object-fit: cover;
   border-radius: 14px;

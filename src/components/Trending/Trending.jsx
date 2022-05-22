@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
-import styled from "styled-components";
-import TrendingItems from "./TrendingItems";
-import { AnimeTrending } from "../../data/data";
-import right from "../../img/right-icon.png";
-import left from "../../img/left-icon.png";
+import React, { useRef } from "react"
+import styled from "styled-components"
+import TrendingItems from "./TrendingItems"
+import { AnimeTrending } from "../../data/data"
+import right from "../../img/right-icon.png"
+import left from "../../img/left-icon.png"
 
 const RightButton = styled.img`
   width: 40px;
@@ -15,7 +15,7 @@ const RightButton = styled.img`
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }
-`;
+`
 
 const LeftButton = styled.img`
   width: 40px;
@@ -26,17 +26,17 @@ const LeftButton = styled.img`
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }
-`;
+`
 
 const Container = styled.div`
-  margin: 50px 15px;
+  margin: 50px 0 50px 50px;
   &:hover ${RightButton} {
     display: flex;
   }
   &:hover ${LeftButton} {
     display: flex;
   }
-`;
+`
 
 const ImagesContainer = styled.div`
   display: flex;
@@ -45,14 +45,14 @@ const ImagesContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-`;
+`
 
 const Title = styled.h1`
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   color: white;
-`;
+`
 
 const TitleContainer = styled.div`
   display: flex;
@@ -60,24 +60,24 @@ const TitleContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-`;
+`
 
 const ButtonsContainer = styled.div`
   @media only screen and (max-device-width: 540px) {
     display: none;
   }
-`;
+`
 
 const Trending = () => {
-  const listRef = useRef();
+  const listRef = useRef()
 
   const moveToRight = () => {
-    listRef.current.scrollLeft += 550;
-  };
+    listRef.current.scrollLeft += 2900 / 6
+  }
 
   const moveToLeft = () => {
-    listRef.current.scrollLeft -= 550;
-  };
+    listRef.current.scrollLeft -= 2900 / 6
+  }
 
   return (
     <Container>
@@ -94,7 +94,7 @@ const Trending = () => {
         ))}
       </ImagesContainer>
     </Container>
-  );
-};
+  )
+}
 
-export default Trending;
+export default Trending
