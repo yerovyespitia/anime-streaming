@@ -4,5 +4,7 @@ Anime Streaming is a fake streaming service inspired on Netflix, HBO Max and App
 
 [View Project](https://anime-streaming.netlify.app/)
 
+## Stack
+
 * React.js
 * Styled-Components
