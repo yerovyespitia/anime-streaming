@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components";
-import axios from "axios";
-import { Helmet } from "react-helmet";
-import { useLocation } from "react-router";
-import { Link } from "react-router-dom";
-import start from "../../img/header/start-icon.png";
-import add from "../../img/header/add-icon.png";
-import addedicon from "../../img/header/added-icon.png";
-import SeasonContainer from "../../components/Season/SeasonContainer";
+import React, { useEffect, useState } from "react"
+import styled from "styled-components"
+import axios from "axios"
+import { Helmet } from "react-helmet"
+import { useLocation } from "react-router"
+import { Link } from "react-router-dom"
+import start from "../../img/header/start-icon.png"
+import add from "../../img/header/add-icon.png"
+import addedicon from "../../img/header/added-icon.png"
+import SeasonContainer from "../../components/Season/SeasonContainer"
 
-const Container = styled.div``;
+const Container = styled.div``
 const HeaderContainer = styled.div`
   position: relative;
-`;
+`
 
 const WallpaperImg = styled.img`
   width: 100%;
@@ -21,7 +21,7 @@ const WallpaperImg = styled.img`
     height: 65vh;
     object-fit: cover;
   }
-`;
+`
 
 const InfoContainer = styled.div`
   position: absolute;
@@ -38,14 +38,14 @@ const InfoContainer = styled.div`
     width: 100%;
     margin: 5px 0;
   }
-`;
+`
 
 const InfoLogo = styled.img`
   width: 55%;
   @media (max-width: 800px) {
     display: none;
   }
-`;
+`
 
 const InfoTitle = styled.h1`
   font-family: "Open Sans", sans-serif;
@@ -55,7 +55,7 @@ const InfoTitle = styled.h1`
   @media (max-width: 800px) {
     margin: 10px 20px;
   }
-`;
+`
 
 const InfoDesc = styled.p`
   font-family: "Raleway", sans-serif;
@@ -69,7 +69,7 @@ const InfoDesc = styled.p`
   @media (max-width: 800px) {
     margin: 10px 20px;
   }
-`;
+`
 
 const ButtonsContainer = styled.div`
   display: flex;
@@ -77,7 +77,7 @@ const ButtonsContainer = styled.div`
   @media (max-width: 800px) {
     display: none;
   }
-`;
+`
 
 const StartIcon = styled.img`
   width: clamp(180px, 30%, 207px);
@@ -85,7 +85,7 @@ const StartIcon = styled.img`
   &:hover {
     filter: grayscale(30%) opacity(95%);
   }
-`;
+`
 
 const AddIcon = styled.img`
   width: 55px;
@@ -95,7 +95,7 @@ const AddIcon = styled.img`
   &:hover {
     filter: grayscale(70%) opacity(70%);
   }
-`;
+`
 
 const AddedIcon = styled.img`
   width: 55px;
@@ -105,26 +105,26 @@ const AddedIcon = styled.img`
   &:hover {
     filter: grayscale(30%) opacity(90%);
   }
-`;
+`
 
 const AnimeView = () => {
-  const [view, setView] = useState([]);
-  const [added, setAdded] = useState(true);
-  const location = useLocation();
-  const path = location.pathname.split("/")[2];
+  const [view, setView] = useState([])
+  const [added, setAdded] = useState(true)
+  const location = useLocation()
+  const path = location.pathname.split("/")[2]
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
     axios
       .get(`https://anime-streaming-app-api.herokuapp.com/api/view/${path}`)
       .then((res) => {
-        setView(res.data);
-      });
-  }, [path]);
+        setView(res.data)
+      })
+  }, [path])
 
   const handleClick = () => {
-    setAdded(!added);
-  };
+    setAdded(!added)
+  }
 
   return (
     <>
@@ -153,7 +153,7 @@ const AnimeView = () => {
         <SeasonContainer />
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default AnimeView;
+export default AnimeView
