@@ -1,25 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import React from "react"
+import { Link } from "react-router-dom"
+import styled from "styled-components"
 
 const Image = styled.img`
-  margin-right: 15px;
+  width: 100%;
   &:hover {
     filter: grayscale(30%) opacity(85%);
   }
   @media only screen and (max-device-width: 508px) {
     width: 330px;
   }
-`;
+`
+
+const NavLink = styled(Link)`
+  width: 100%;
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+  cursor: pointer;
+`
 
 const CategoryItems = ({ item }) => {
   return (
     <>
-      <Link to={`/view/${item.title}`}>
+      <NavLink to={`/view/${item.title}`}>
         <Image src={item.img} alt={item.title} />
-      </Link>
+      </NavLink>
     </>
-  );
-};
+  )
+}
 
-export default CategoryItems;
+export default CategoryItems

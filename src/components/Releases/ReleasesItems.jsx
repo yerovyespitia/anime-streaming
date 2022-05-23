@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Image = styled.img`
-  width: 100vw;
+  width: 100%;
   min-height: 538px;
   object-fit: cover;
   border-radius: 14px;
   &:hover {
     filter: grayscale(30%) opacity(85%);
   }
+  cursor: pointer;
 `;
 
 const ReleasesItems = ({ item }) => {

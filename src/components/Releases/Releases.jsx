@@ -4,14 +4,11 @@ import ReleasesItems from "./ReleasesItems"
 import { AnimeReleases } from "../../data/data"
 
 const Container = styled.div`
-  margin: 50px 0;
+  margin: 30px;
 `
 
 const ImagesContainer = styled.div`
-  display: flex;
-  justify-content: center;
   overflow-y: hidden;
-  scroll-behavior: smooth;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -20,7 +17,7 @@ const ImagesContainer = styled.div`
 const Title = styled.h1`
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 30px;
   color: white;
 `
 
@@ -29,7 +26,6 @@ const TitleContainer = styled.div`
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  margin-left: 15px;
   margin-bottom: 10px;
 `
 
