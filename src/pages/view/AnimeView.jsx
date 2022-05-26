@@ -34,17 +34,12 @@ const InfoContainer = styled.div`
   justify-content: flex-end;
   @media (max-width: 800px) {
     left: 0;
-    position: relative;
     width: 100%;
-    margin: 5px 0;
   }
 `
 
 const InfoLogo = styled.img`
   width: 55%;
-  @media (max-width: 800px) {
-    display: none;
-  }
 `
 
 const InfoTitle = styled.h1`
@@ -53,7 +48,7 @@ const InfoTitle = styled.h1`
   color: white;
   margin: 10px 0 0 0;
   @media (max-width: 800px) {
-    margin: 10px 20px;
+    margin: 0 20px;
   }
 `
 
@@ -63,9 +58,6 @@ const InfoDesc = styled.p`
   font-weight: 500;
   color: white;
   margin: 10px 0 10px 0;
-  @media only screen and (max-width: 800px) {
-    display: block;
-  }
   @media (max-width: 800px) {
     margin: 10px 20px;
   }
@@ -75,7 +67,7 @@ const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   @media (max-width: 800px) {
-    display: none;
+    margin: 10px 20px;
   }
 `
 
