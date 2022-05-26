@@ -1,6 +1,6 @@
 import React from "react"
 import Category from "../../components/Categories/Category"
-import Header from "../../components/Header"
+import Banner from "../../components/Banner"
 import Releases from "../../components/Releases/Releases"
 import Trending from "../../components/Trending/Trending"
 import { Helmet } from "react-helmet"
@@ -12,7 +12,7 @@ const Home = () => {
       <Helmet>
         <title>Anime Streaming</title>
       </Helmet>
-      <Header />
+      <Banner />
       <Releases />
       <Trending />
       <Category title={"Continue watching"} data={WatchingAnime} />

@@ -9,34 +9,32 @@ import add from "../img/add.png"
 
 const Container = styled.div`
   position: relative;
-  width: 100%;
 `
 
 const ContentContainer = styled.div`
   position: absolute;
-  top: 0;
+  top: 15%;
   left: 4%;
-  width: 36%;
+  width: 50%;
   z-index: 10;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
 `
 
-const Logo = styled.img``
+const LogoContainer = styled.div`
+  width: 25vw;
+`
 
-const Summary = styled.p`
-  font-family: "Roboto";
-  font-size: 20px;
-  color: white;
+const Logo = styled.img`
+  max-width: 100%;
+  height: auto;
 `
 
 const ButtonsContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-flex;
   margin-top: 20px;
+  max-width: 27vw;
+  @media (max-width: 650px) {
+    display: none;
+  }
 `
 
 const PlayButton = styled.div`
@@ -51,7 +49,12 @@ const PlayButton = styled.div`
   border-radius: 60px;
   color: white;
   margin-right: 10px;
+  padding: 0px 15px;
   cursor: pointer;
+  @media (max-width: 950px) {
+    font-size: 20px;
+    height: 50px;
+  }
 `
 
 const EpisodesButton = styled.div`
@@ -66,21 +69,35 @@ const EpisodesButton = styled.div`
   border-radius: 60px;
   color: black;
   margin-right: 10px;
+  padding: 0px 15px;
   cursor: pointer;
+  @media (max-width: 950px) {
+    font-size: 20px;
+    height: 50px;
+  }
 `
 
 const Play = styled.img`
   width: 22px;
   margin-right: 8px;
+  @media (max-width: 950px) {
+    width: 18px;
+  }
 `
 const Info = styled.img`
   width: 28px;
   margin-right: 8px;
+  @media (max-width: 950px) {
+    width: 18px;
+  }
 `
 
 const Add = styled.img`
   width: 60px;
   cursor: pointer;
+  @media (max-width: 950px) {
+    width: 50px;
+  }
 `
 
 const Header = () => {
@@ -100,12 +117,9 @@ const Header = () => {
         playsInline={true}
       />
       <ContentContainer>
-        <Logo src={logo} />
-        <Summary>
-          The story takes place in Taishō-era Japan. It follows Tanjiro Kamado
-          and his sister Nezuko Kamado as they seek a cure for Nezuko’s demon
-          curse.
-        </Summary>
+        <LogoContainer>
+          <Logo src={logo} />
+        </LogoContainer>
         <ButtonsContainer>
           <PlayButton>
             <Play src={play} />
