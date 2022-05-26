@@ -3,9 +3,8 @@ import styled from "styled-components"
 import axios from "axios"
 import { Helmet } from "react-helmet"
 import { useLocation } from "react-router"
-import { Link } from "react-router-dom"
 import start from "../../img/header/start-icon.png"
-import add from "../../img/header/add-icon.png"
+import add from "../../img/add.png"
 import addedicon from "../../img/header/added-icon.png"
 import SeasonContainer from "../../components/Season/SeasonContainer"
 
@@ -131,9 +130,7 @@ const AnimeView = () => {
             <InfoTitle>{view.name}</InfoTitle>
             <InfoDesc>{view.description}</InfoDesc>
             <ButtonsContainer>
-              <Link to={`/watch/${view.name}`} style={{ width: "180px" }}>
-                <StartIcon src={start} />
-              </Link>
+              <StartIcon src={start} />
               {added ? (
                 <AddIcon onClick={handleClick} src={add} />
               ) : (
