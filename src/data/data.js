@@ -12,21 +12,18 @@ import watching2 from "../img/watching/watching2.png"
 import watching3 from "../img/watching/watching3.png"
 import watching4 from "../img/watching/watching4.png"
 import watching5 from "../img/watching/watching5.png"
-import watching6 from "../img/watching/watching6.png"
 
 import spring1 from "../img/spring/spring1.png"
 import spring2 from "../img/spring/spring2.png"
 import spring3 from "../img/spring/spring3.png"
 import spring4 from "../img/spring/spring4.png"
 import spring5 from "../img/spring/spring5.png"
-import spring6 from "../img/spring/spring6.png"
 
 import fall1 from "../img/fall/fall1.png"
 import fall2 from "../img/fall/fall2.png"
 import fall3 from "../img/fall/fall3.png"
 import fall4 from "../img/fall/fall4.png"
 import fall5 from "../img/fall/fall5.png"
-import fall6 from "../img/fall/fall6.png"
 
 export const AnimeReleases = [
   {
@@ -85,7 +82,7 @@ export const WatchingAnime = [
     id: 9,
   },
   {
-    title: "Tokyo Ghoul",
+    title: "Pokémon",
     img: watching4,
     id: 10,
   },
@@ -93,11 +90,6 @@ export const WatchingAnime = [
     title: "Neon Genesis Evangelion",
     img: watching5,
     id: 11,
-  },
-  {
-    title: "Pokémon",
-    img: watching6,
-    id: 12,
   },
 ]
 
@@ -127,11 +119,6 @@ export const SpringAnime = [
     img: spring5,
     id: 17,
   },
-  {
-    title: "Demon Slayer",
-    img: spring6,
-    id: 18,
-  },
 ]
 
 export const FallAnime = [
@@ -159,10 +146,5 @@ export const FallAnime = [
     title: "My Hero Academia",
     img: fall5,
     id: 23,
-  },
-  {
-    title: "Mirai Nikki",
-    img: fall6,
-    id: 24,
   },
 ]

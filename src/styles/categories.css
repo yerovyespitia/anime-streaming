@@ -1,0 +1,46 @@
+.categories {
+  margin: 30px;
+}
+
+.categoriesImgContainer {
+  display: flex;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.categoriesImgContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.categoriesTitle {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+
+.categoryImg {
+  width: 100%;
+}
+
+.categoryImg:hover {
+  opacity: 0.5;
+}
+
+.categoryLink {
+  width: 100%;
+  cursor: pointer;
+}
+
+.categoryLink:not(:last-child) {
+  margin-right: 5px;
+}
+
+@media only screen and (max-device-width: 508px) {
+  .categoriesContainer {
+    margin: 10px;
+  }
+  .categoryImg {
+    width: 330px;
+  }
+}
