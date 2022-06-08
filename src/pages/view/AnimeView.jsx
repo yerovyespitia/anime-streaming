@@ -28,7 +28,7 @@ const AnimeView = () => {
         <div className="viewHeader">
           <img className="viewWallpaper" src={view.wallpaper} alt="wallpaper" />
           <div className="viewContent">
-            <img id="viewLogo" src={view.logo} alt="logo"/>
+            <img id="viewLogo" src={view.logo} alt="logo" />
             <h1 className="viewTitle">{view.name}</h1>
             <p className="viewDesc">{view.description}</p>
           </div>
