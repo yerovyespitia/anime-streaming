@@ -1,9 +1,11 @@
 .viewHeader {
   position: relative;
+  margin: 30px;
 }
 
 .viewWallpaper {
   width: 100%;
+  border-radius: 10px;
 }
 
 .viewContent {
@@ -38,7 +40,6 @@
 
 @media (max-width: 800px) {
   .viewWallpaper {
-    border-radius: 0 0 16px 16px;
     height: 65vh;
     object-fit: cover;
   }
