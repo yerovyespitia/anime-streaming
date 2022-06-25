@@ -6,24 +6,26 @@ import "../styles/banner.css"
 
 const Header = () => {
   return (
-    <div className="bannerContainer">
-      <div className="banner">
-        <ReactPlayer
-          url={video}
-          playing={true}
-          muted={true}
-          width="100%"
-          height="100%"
-          loop={true}
-          playsInline={true}
-        />
-        <div className="bannerContent">
-          <a href="/view/Demon Slayer">
-            <img id="bannerLogo" src={logo} alt="logo" />
-          </a>
-          <p className="bannerDesc">Demon Slayer Avaiable Now</p>
-          <p className="bannerSchedule">New Episodes Every Friday</p>
-        </div>
+    <div className="relative m-[30px]">
+      <ReactPlayer
+        url={video}
+        playing={true}
+        muted={true}
+        width="100%"
+        height="100%"
+        loop={true}
+        playsInline={true}
+      />
+      <div className="absolute top-0 bottom-[12%] left-[4%] w-[36%] 2xl:w-[25%] flex flex-col justify-end">
+        <a href="/view/Demon Slayer">
+          <img className="w-[55%] cursor-pointer" src={logo} alt="logo" />
+        </a>
+        <p className="font-hel text-xl font-bold text-[white] mt-5 mb-0 lg:text-2xl">
+          Demon Slayer Available Now
+        </p>
+        <p className="font-hel text-base text-[#bfbfbf] lg:text-lg">
+          New Episodes Every Friday
+        </p>
       </div>
     </div>
   )

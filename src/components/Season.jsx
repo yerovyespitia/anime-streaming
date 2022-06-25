@@ -1,14 +1,19 @@
 import React, { useState } from "react"
-import "../styles/season.css"
 
 const Season = (seasons) => {
   const [ep] = useState(seasons.season)
   return (
     <>
-      <div className="episode">
-        <img className="episodeImg" src={ep.thumbnail} alt="episodes" />
-        <p className="episodeTitle">{ep.nameEp}</p>
-        <p className="episodeTime">{ep.time}</p>
+      <div>
+        <img
+          className="w-[100%] cursor-pointer hover:opacity-50"
+          src={ep.thumbnail}
+          alt="episodes"
+        />
+        <p className="font-sf text-xl font-bold text-[white] p-0 mt-3 mb-0 tracking-wide">
+          {ep.nameEp}
+        </p>
+        <p className="font-sf text-lg text-[#bbbbbb] mt-2 mb-0">{ep.time}</p>
       </div>
     </>
   )
