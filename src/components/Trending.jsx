@@ -1,6 +1,6 @@
 import React from "react"
 
-const Category = ({ item }) => {
+const Trending = ({ item }) => {
   return (
     <div className="relative h-full hover:opacity-50 min-w-[180px] cursor-pointer transition duration-200 ease-out md:min-w-[260px] md:hover:scale-105">
       <a href={`/view/${item.title}`}>
@@ -10,4 +10,4 @@ const Category = ({ item }) => {
   )
 }
 
-export default Category
+export default Trending

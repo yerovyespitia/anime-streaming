@@ -6,7 +6,7 @@ import "../styles/banner.css"
 
 const Header = () => {
   return (
-    <div className="relative m-[30px]">
+    <div className="relative m-[16px]">
       <ReactPlayer
         url={video}
         playing={true}

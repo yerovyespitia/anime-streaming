@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react"
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline"
-import Category from "./Category"
 import right from "../img/right.svg"
+import Trending from "./Trending"
 
-const Categories = ({ title, data }) => {
+const TrendingContainer = ({ title, data }) => {
   const rowRef = useRef()
   const [isMoved, setIsMoved] = useState(false)
 
@@ -21,7 +21,7 @@ const Categories = ({ title, data }) => {
   }
 
   return (
-    <div className="ml-4 font-sans h-50 space-y-0.5 md:space-y-2 mb-8">
+    <div className="ml-4 h-50 font-sans space-y-0.5 md:space-y-2 mb-8">
       <h1 className="font-sf w-50 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
         {title}
         <span>
@@ -44,7 +44,7 @@ const Categories = ({ title, data }) => {
           ref={rowRef}
         >
           {data.map((item, i) => (
-            <Category item={item} key={i} />
+            <Trending item={item} key={i} />
           ))}
           <ChevronRightIcon
             className="absolute top-0 bottom-0 right-2 z-40 m-auto h-1/2 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 bg-white bg-opacity-60"
@@ -56,4 +56,4 @@ const Categories = ({ title, data }) => {
   )
 }
 
-export default Categories
+export default TrendingContainer
