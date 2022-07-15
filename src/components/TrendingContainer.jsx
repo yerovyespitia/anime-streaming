@@ -34,7 +34,7 @@ const TrendingContainer = ({ title, data }) => {
       </h1>
       <div className="group relative md:-ml-2">
         <ChevronLeftIcon
-          className={`absolute top-0 bottom-0 left-2 z-40 m-auto h-1/2 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 bg-white bg-opacity-60 ${
+          className={`absolute stroke-white top-0 bottom-0 left-2 z-40 m-auto h-1/2 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 bg-opacity-60 ${
             !isMoved && "hidden"
           }`}
           onClick={() => handleClick("left")}
@@ -47,7 +47,7 @@ const TrendingContainer = ({ title, data }) => {
             <Trending item={item} key={i} />
           ))}
           <ChevronRightIcon
-            className="absolute top-0 bottom-0 right-2 z-40 m-auto h-1/2 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 bg-white bg-opacity-60"
+            className="absolute stroke-white top-0 bottom-0 right-2 z-40 m-auto h-1/2 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 bg-opacity-60"
             onClick={() => handleClick("right")}
           />
         </div>
