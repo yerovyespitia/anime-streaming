@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon-white {
+	@apply filter sepia-0 invert saturate-0 hue-rotate-[320deg] brightness-[102%] contrast-[101%];
+}
+
+:root {
+	background-color: #171717;
+}
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
