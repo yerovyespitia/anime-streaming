@@ -1,7 +1,7 @@
 <div class="relative mb-4">
   <video
     class="w-full h-full opacity-70"
-    src="./static/assets/video.mp4"
+    src={"../static/assets/video.mp4"}
     autoplay
     loop
     muted
@@ -12,7 +12,7 @@
     <a href="/watch/Demon Slayer">
       <img
         class="w-[70%]"
-        src="./static/assets/logo.png"
+        src={"../static/assets/logo.png"}
         alt="demon slayer logo"
       />
     </a>
