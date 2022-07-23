@@ -16,8 +16,8 @@ export const populars: Anime[] = [
     id: 1,
   },
   {
-    title: "Bleach",
-    img: "./static/assets/thumbnails/bleach.png",
+    title: "Violet Evergarden",
+    img: "./static/assets/thumbnails/ve.png",
     id: 2,
   },
   {
@@ -26,8 +26,8 @@ export const populars: Anime[] = [
     id: 3,
   },
   {
-    title: "Dragon Ball Z",
-    img: "./static/assets/thumbnails/dbz.png",
+    title: "Kakegurui",
+    img: "./static/assets/thumbnails/kakegurui.png",
     id: 4,
   },
   {

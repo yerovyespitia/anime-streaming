@@ -2,7 +2,7 @@
   // @ts-ignore
   export async function load({ params }) {
     const id = params.id
-    const url = `http://localhost:5000/api/anime/${id}`
+    const url = `https://anime-streaming-api-app.herokuapp.com/api/anime/${id}`
     const res = await fetch(url)
     const anime = await res.json()
     return { props: { anime } }
