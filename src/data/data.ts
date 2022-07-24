@@ -7,37 +7,37 @@ type Anime = {
 export const populars: Anime[] = [
   {
     title: "Attack on Titan",
-    img: "../static/assets/thumbnails/aot.png",
+    img: "https://github.com/yerovyespitia/anime-streaming/blob/main/static/assets/thumbnails/aot.png?raw=true",
     id: 0,
   },
   {
     title: "Black Clover",
-    img: "../static/assets/thumbnails/bc.png",
+    img: "https://github.com/yerovyespitia/anime-streaming/blob/main/static/assets/thumbnails/bc.png?raw=true",
     id: 1,
   },
   {
     title: "Violet Evergarden",
-    img: "../static/assets/thumbnails/ve.png",
+    img: "https://github.com/yerovyespitia/anime-streaming/blob/main/static/assets/thumbnails/ve.png?raw=true",
     id: 2,
   },
   {
     title: "Serial Experiments Lain",
-    img: "../static/assets/thumbnails/lain.png",
+    img: "https://github.com/yerovyespitia/anime-streaming/blob/main/static/assets/thumbnails/lain.png?raw=true",
     id: 3,
   },
   {
     title: "Kakegurui",
-    img: "../static/assets/thumbnails/kakegurui.png",
+    img: "https://github.com/yerovyespitia/anime-streaming/blob/main/static/assets/thumbnails/kakegurui.png?raw=true",
     id: 4,
   },
   {
     title: "Death Note",
-    img: "../static/assets/thumbnails/deathnote.png",
+    img: "https://github.com/yerovyespitia/anime-streaming/blob/main/static/assets/thumbnails/deathnote.png?raw=true",
     id: 5,
   },
   {
     title: "Demon Slayer",
-    img: "../static/assets/thumbnails/ds.png",
+    img: "https://github.com/yerovyespitia/anime-streaming/blob/main/static/assets/thumbnails/ds.png?raw=true",
     id: 6,
   },
 ]

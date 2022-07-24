@@ -31,7 +31,7 @@
       class={`absolute top-0 bottom-0 left-2 z-40 m-auto h-1/2 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 bg-opacity-60 icon-white ${
         !isMoved && "hidden"
       }`}
-      src="./static/assets/left.svg"
+      src="https://raw.githubusercontent.com/yerovyespitia/anime-streaming/73e04f3c1ad8e54f9dc26347463b994c42b57ee1/static/assets/left.svg"
       alt="left arrow"
       on:click={() => moveSlider("left")}
     />
@@ -54,7 +54,7 @@
       {/each}
       <img
         class="absolute top-0 bottom-0 right-2 z-40 m-auto h-1/2 w-9 cursor-pointer icon-white opacity-0 transition hover:scale-125 group-hover:opacity-100 bg-opacity-60"
-        src="./static/assets/right.svg"
+        src="https://raw.githubusercontent.com/yerovyespitia/anime-streaming/73e04f3c1ad8e54f9dc26347463b994c42b57ee1/static/assets/right.svg"
         alt="right arrow"
         on:click={() => moveSlider("right")}
       />

@@ -26,7 +26,6 @@
     title: string
   }
   export let anime: IAnime
-  console.log(anime)
 </script>
 
 <svelte:head>
