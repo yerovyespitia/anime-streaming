@@ -1,7 +1,7 @@
 <div class="relative mb-4">
   <video
     class="w-full h-full opacity-70"
-    src="https://github.com/yerovyespitia/anime-streaming-svelte/blob/main/static/assets/video.mp4"
+    src="https://github.com/yerovyespitia/anime-streaming-svelte/blob/main/static/assets/video.mp4?raw=true"
     autoplay
     loop
     muted
